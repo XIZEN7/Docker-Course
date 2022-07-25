@@ -6,7 +6,6 @@ Esta es una pequeña guia acerca de Docker
 
 ```
 install docker
-
 ```
 
 ## Instalacion En Windows
@@ -17,3 +16,11 @@ Seguir los pasos de instalacion de la pagina oficial de Docker
 ```
 https://docs.docker.com/desktop/install/windows-install/
 ```
+
+# Comandos Docker
+
+dock.png
+
+dock1.png
+
+dock2.png
