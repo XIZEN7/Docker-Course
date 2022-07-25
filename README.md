@@ -62,7 +62,7 @@ Obligatoriamente debemos asignar una contraseña
 docker run -e POSTGRES_PASSWORD=ASIGNAR_CONTRASEÑA postgres
 ```
 
-Asignar de nombre de usuario
+Asignar nombre de usuario
 
 ```
 docker run -e POSTGRES_USER=ASIGNAR_NOMBRE -e POSTGRES_PASSWORD=ASIGNAR_CONTRASEÑA postgres
@@ -74,7 +74,7 @@ Asignar nombre base de datos
 docker run -e POSTGRES_USER=ASIGNAR_NOMBRE -e POSTGRES_PASSWORD=ASIGNAR_CONTRASEÑA -e POSTGRES_DB=NOMBRE_DB -d postgres
 ```
 
-Asignar de nombre contenedor
+Asignar nombre del contenedor
 
 ```
 docker run --name NOMBRE_CONTENEDOR -e POSTGRES_USER=ASIGNAR_NOMBRE -e POSTGRES_PASSWORD=ASIGNAR_CONTRASEÑA -e POSTGRES_DB=NOMBRE_DB -d postgres
