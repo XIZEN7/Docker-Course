@@ -19,8 +19,14 @@ https://docs.docker.com/desktop/install/windows-install/
 
 # Comandos Docker
 
-dock.png
+```
+images/dock.png
+```
 
-dock1.png
+```
+images/dock1.png
+```
 
-dock2.png
+```
+images/dock2.png
+```
