@@ -47,7 +47,6 @@ docker pull postgres
 ```
 
 Con este comando le asignaremos la versión de la imagen que queremos descargar
--Ejemplo
 
 ```
 docker pull postgres:14.4
@@ -57,8 +56,40 @@ docker pull postgres:14.4
 
 Revisar documentación de postgres sobre las varibles de entorno
 
+Obligatoriamente debemos asignar una contraseña
+
 ```
 docker run -e POSTGRES_PASSWORD=ASIGNAR_CONTRASEÑA postgres
+```
+
+Asignar de nombre de usuario
+
+```
+docker run -e POSTGRES_USER=ASIGNAR_NOMBRE -e POSTGRES_PASSWORD=ASIGNAR_CONTRASEÑA postgres
+```
+
+Asignar nombre base de datos
+
+```
+docker run -e POSTGRES_USER=ASIGNAR_NOMBRE -e POSTGRES_PASSWORD=ASIGNAR_CONTRASEÑA -e POSTGRES_DB=NOMBRE_DB -d postgres
+```
+
+Asignar de nombre contenedor
+
+```
+docker run --name NOMBRE_CONTENEDOR -e POSTGRES_USER=ASIGNAR_NOMBRE -e POSTGRES_PASSWORD=ASIGNAR_CONTRASEÑA -e POSTGRES_DB=NOMBRE_DB -d postgres
+```
+
+Asignar puerto
+
+```
+docker run --name NOMBRE_CONTENEDOR -e POSTGRES_USER=ASIGNAR_NOMBRE -e POSTGRES_PASSWORD=ASIGNAR_CONTRASEÑA -e POSTGRES_DB=NOMBRE_DB -p 5432:5432 -d postgres
+```
+
+## Version de Postgres
+
+```
+psql --version
 ```
 
 ## Conectarnos a la imagen postgres
@@ -73,4 +104,46 @@ El usuario por defecto es postgres
 
 ```
 psql -U USUARIO --password
+```
+
+## Listar bases de datos
+
+```
+\l
+```
+
+## Listar tablas
+
+```
+\d
+```
+
+## Listar los contenedores
+
+```
+docker ps
+```
+
+Ver los contenedores en ejecución
+
+```
+docker ps -a
+```
+
+## Detener contenedor
+
+```
+docker stop ID CONTENEDOR O NOMBRE CONTENEDOR
+```
+
+## Eliminar contenedores
+
+```
+docker rm ID CONTENEDOR O NOMBRE CONTENEDOR
+```
+
+## Eliminar imagen
+
+```
+docker rmi ID IMAGEN
 ```
