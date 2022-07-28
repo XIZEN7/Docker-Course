@@ -147,3 +147,9 @@ docker rm ID CONTENEDOR O NOMBRE CONTENEDOR
 ```
 docker rmi ID IMAGEN
 ```
+
+## Levantar imagen en un Docker compose
+
+```
+docker compose up
+```
