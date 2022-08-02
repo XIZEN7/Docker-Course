@@ -147,7 +147,21 @@ docker rm ID CONTENEDOR O NOMBRE CONTENEDOR
 ```
 docker rmi ID IMAGEN
 ```
+## Listar redes
 
+```
+docker network ls
+```
+## Crear una nueva red
+
+```
+docker network create NOMBRE_RED
+```
+## Eliminar una red
+
+```
+docker network rm ID_RED
+```
 ## Levantar imagen en un Docker compose
 
 ```
